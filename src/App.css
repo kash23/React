@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: white;
+    z-index: 1000;
+    border: 1px black solid;
+  }
+  
+  .section {
+    height: 100vh; 
+    border: 1px solid #ccc;
+    padding-top: 73px;
+  }
+
+  #home { background-color: #f9c2ff; }
+  #about { background-color: #c2f9ff; }
+  #services { background-color: #c2ffc2; }
+  #contact { background-color: #ffc2c2; }
+
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  .underline {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    position: relative; 
+    display: inline-block; 
+    padding-bottom: 5px;
+}
+
+    .underline::after {
+        content: ''; 
+
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        color: black;
+        height: 2px; 
+        width: 100%; 
+        background-color: #1f6f8f; 
+        transform: scaleX(0); 
+        transition: transform 0.3s; 
+    }
+
+    .underline:hover::after {
+        cursor: pointer;
+        color: black;
+        transform: scaleX(1);
+    }
