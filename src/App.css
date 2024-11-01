@@ -13,6 +13,11 @@ body {
     border: 1px black solid;
   }
   
+  .active {
+    font-weight: bold;  
+    color: blue;        
+}
+
   .section {
     height: 100vh; 
     border: 1px solid #ccc;
